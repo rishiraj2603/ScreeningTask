@@ -14,7 +14,7 @@ const GetGreetingBtn = () => {
       setGreeting("");
 
       const res = await axios.get(
-        `http://localhost:4000/api/greet?name=${name}`
+        `https://screeningtask-ivm6.onrender.com/api/greet?name=${name}`
       );
       const data = res.data;
       setGreeting(data.message);
